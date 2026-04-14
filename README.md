@@ -45,3 +45,12 @@ jobs:
 
       - name: Output New Tag
         run: echo "The new tag is ${{ steps.tag_action.outputs.new_tag }}"
+```
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+```
+### Final Step: Why `fetch-depth: 0`?
+I added `fetch-depth: 0` to the README example. By default, `actions/checkout` only fetches the latest commit. For your action to correctly find the **previous** tags to determine the next version, it needs the full history (or at least the tags). This is a common pitfall for users of tag actions!
+```
