@@ -49,10 +49,50 @@ jobs:
         run: echo "The new tag is ${{ steps.tag_action.outputs.new_tag }}"
 ```
 
-## License
+## ⚙️ Configuration
+
+### Inputs
+
+| Input | Description | Required | Default |
+|-------|-------------|----------|---------|
+| `github_token` | `GITHUB_TOKEN` or Personal Access Token. | **Yes** | N/A |
+| `default_bump` | Which part of the version to increment (`patch`, `minor`, `major`). | No | `patch` |
+| `tag_prefix` | A prefix to add to the tag (e.g., `v`). | No | `v` |
+| `dry_run` | If `true`, the action calculates the tag but does not push it. | No | `false` |
+
+### Outputs
+
+| Output | Description |
+|--------|-------------|
+| `new_tag` | The value of the newly created tag (e.g., `v1.0.1`). |
+| `old_tag` | The value of the previous tag (e.g., `v1.0.0`). |
+
+## 📦 Developer Setup
+
+If you want to contribute or modify this action:
+
+1. Clone the repo.
+2. Install dependencies: `npm install`.
+3. Modify `src/index.js`.
+4. Build the distribution: `npm run build`.
+5. **Note:** The `dist/index.js` file must be committed for the action to run.
+
+## 📄 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ```
 ### Final Step: Why `fetch-depth: 0`?
 I added `fetch-depth: 0` to the README example. By default, `actions/checkout` only fetches the latest commit. For your action to correctly find the **previous** tags to determine the next version, it needs the full history (or at least the tags). This is a common pitfall for users of tag actions!
 ```
+
+---
+
+<div align="center">
+  <p>
+    <b>Powered by Ananta Cloud</b><br>
+    <em>Building the future of cloud automation and seamless CI/CD workflows.</em>
+  </p>
+  <a href="https://github.com/anantacloud-actions">
+    <img src="https://img.shields.io/badge/Powered%20By-Ananta%20Cloud-blue?style=for-the-badge&logo=icloud&logoColor=white" alt="Ananta Cloud">
+  </a>
+</div>
