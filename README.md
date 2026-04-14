@@ -1,5 +1,7 @@
 # Modern GitHub Tag Action 🏷️
 
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/2dc9fb24-92aa-4c96-9888-90952829ebb1" />
+
 A lightweight, high-performance GitHub Action to automatically manage Semantic Versioning (SemVer) tags. This action calculates the next version based on your current tags and pushes a new tag to your repository.
 
 [![Marketplace](https://img.shields.io/badge/Marketplace-Modern--Tag--Action-blue.svg)](https://github.com/marketplace/actions/modern-github-tag-action)
