@@ -1,0 +1,34 @@
+name: 'Modern GitHub Tag Action'
+description: 'Automatically bumps and pushes a new semver tag'
+author: 'Ananta Cloud'
+
+inputs:
+  github_token:
+    description: 'GitHub Token (GITHUB_TOKEN)'
+    required: true
+  default_bump:
+    description: 'Which part of the semver to bump (patch, minor, major)'
+    default: 'patch'
+    required: false
+  tag_prefix:
+    description: 'Prefix for the tag (e.g., v)'
+    default: 'v'
+    required: false
+  dry_run:
+    description: 'If true, will not create the tag'
+    default: 'false'
+    required: false
+
+outputs:
+  new_tag:
+    description: 'The value of the newly created tag'
+  old_tag:
+    description: 'The previous tag value'
+
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
+
+branding:
+  icon: 'tag'
+  color: 'blue'
