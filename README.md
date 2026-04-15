@@ -5,11 +5,7 @@
 A lightweight, high-performance GitHub Action to automatically manage Semantic Versioning (SemVer) tags. This action calculates the next version based on your current tags and pushes a new tag to your repository.
 
 [![Marketplace](https://img.shields.io/badge/Marketplace-Modern--Tag--Action-blue.svg)](https://github.com/marketplace/actions/modern-github-tag-action)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ![Build](https://img.shields.io/github/actions/workflow/status/anantacloud-actions/github-tag-action/ci.yml?branch=main&label=build&style=for-the-badge)
-![Release](https://img.shields.io/github/v/release/anantacloud-actions/github-tag-action?style=for-the-badge)
-![Security](https://img.shields.io/badge/security-hardened-green?style=for-the-badge)
-![License](https://img.shields.io/github/license/anantacloud-actions/github-tag-action?style=for-the-badge)
-![Dependabot](https://img.shields.io/badge/dependabot-enabled-blue?style=for-the-badge)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 
 ## 🚀 Features
 
